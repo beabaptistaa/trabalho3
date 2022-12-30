@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!----------- HEAD --------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Modak' rel='stylesheet'>
+    
+    <!-- Simple lightbox CSS --
+    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" /-->
+
+    <title>Trabalho 3</title>
+  </head>
+
+  <!----------- BODY --------------->
+  <body>
+    <!-- Navbar -->
+    <nav id="nav_id">
+      <section href="" class="logo">
+        <a href="./index.html" id="nav_logo">
+          <span class="name">Beatriz</span><span class="last"> Baptista.</span>
+        </a>
+      </section>
+  
+    <ul id="nav_op">
+      <li class="nav-item">
+        <a href="./about.html" class="nav-link" id="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="./contact.html" class="nav-link" id="nav-link">Contact</a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <section class="container">
+    <div id="left">
+      <div id="menu">
+        <p><a href="#about">- About me</a><br></p>
+        <p><a href="#study">- Studies</a><br></p>
+        <p><a href="#books">- Books</a><br></p>
+        <p><a href="#music">- Music</a><br></p>
+      </div>
+    </div>
+
+    <div id="right">
+      <!-- About section -->
+      <section class="about" id="about">
+        <h2>About me</h2>
+        <p>
+          Hi! I'm <a>Beatriz</a>, I'm from <a>Portugal</a> and I have a degree in Computer Engineering.
+          I have always shown interest in Illustration, Photography and Design in my free time. At this moment I want to explore my more creative side combined with the knowledge I acquired in Computer Science.
+        </p>
+      </section>
+
+      <!-- Study section -->
+      <section class="study" id="study">
+        <h2>Studies</h2>
+        <p>I graduated in <a>Computer Science</a> and right now I'm getting a masters in <a>Design</a>.<br>
+          <br>When I'm with artistic/creative people, I always feel that my mind is too scientific and objective, but when it's the other way around, I feel that I don't fit into the concrete/technical areas. My goal is to combine these two areas, which can complement each other, and create a perfect balance.
+        </p>
+
+        <section class="container" id="container">
+          <div class="square1">Computer Science</div>
+          <div class="square2">Design</div>
+        </section>
+      </section>
+
+      <!-- Books section -->
+      <section class="books" id="books">
+        <h2>Books</h2>
+        <p>
+          Books can be a very powerful source of inspiration and motivation. They can inspire you to read, to write or to create. The following are some books I have read and enjoyed. Click on the button to pick your next read.
+        </p>    
+
+        <div class="wraper" id="wraper">
+          <div class="arrowup" id="arrowup"></div>
+          <div class="window" id="window">
+            <ul class="list" id="list">
+              <li><img src="imgs/a_room.jpeg" alt="a_room"></li>
+              <li><img src="imgs/bell_jar.jpeg" alt="bell_jar.jpeg"></li>
+              <li><img src="imgs/breasts_and_eggs.jpeg" alt="breasts_and_eggs"></li>
+              <li><img src="imgs/dorian_gray.jpeg" alt=""></li>
+              <li><img src="imgs/dragon_tattoo.jpeg" alt=""></li>
+              <li><img src="imgs/ensaio_cegueira.jpeg" alt=""></li>
+              <li><img src="imgs/ghibli.jpeg" alt=""></li>
+              <li><img src="imgs/gone_girl.jpeg" alt=""></li>
+              <li><img src="imgs/heaven.jpeg" alt=""></li>
+              <li><img src="imgs/homem_duplicado.jpeg" alt=""></li>
+              <li><img src="imgs/in_the_dream_house.jpeg" alt=""></li>
+              <li><img src="imgs/kafka_on_the_shore.jpeg" alt=""></li>
+              <li><img src="imgs/kitchen.jpeg" alt=""></li>
+              <li><img src="imgs/lapvona.jpeg" alt=""></li>
+              <li><img src="imgs/never_let_me_go.jpeg" alt=""></li>
+              <li><img src="imgs/norwegian_wood.jpeg" alt=""></li>
+              <li><img src="imgs/ensaio_lucidez.jpeg" alt=""></li>
+              <li><img src="imgs/penguin_japanese_short.jpeg" alt=""></li>
+              <li><img src="imgs/sapiens.jpeg" alt=""></li>
+              <li><img src="imgs/smashed.jpeg" alt=""></li>
+              <li><img src="imgs/spirited_away.jpeg" alt=""></li>
+              <li><img src="imgs/sharp_objects.jpeg" alt=""></li>
+              <li><img src="imgs/unbearable_lightness.jpeg" alt=""></li>
+            </ul>
+          </div>
+
+          
+      </div>
+
+      <button class="button" onClick="spin()">Find your next book!</button>
+   
+          <div class="win">
+              <ul>
+                  
+              </ul>
+          </div>
+
+      </section>
+
+      <!-- Movies section 
+      <section class="movies" id="movies">
+        <h2>Movies</h2>
+        <p>
+          These are my favorite movies.
+        </p>  
+      </section>
+      -->
+
+      <!-- Music section -->
+      <section class="music" id="music">
+        <h2>Music</h2>
+        <p>
+          These are my favorite songs and artists.
+        </p>  
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0YSBvtIwDo1ZXggoKNGqfs?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </section>
+    </div>
+  </section>
+
+    <!-- Arrow -->
+    <img class="arrow-down-icon" alt="" src="public/arrow-down.svg">
+
+    <!-- Web page script -->
+    <script src="script.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+  </body>
+
+  <!--- FOOTER -->
+  <footer>&copy; All Rights Reserved</footer>
+</html>
